@@ -1,4 +1,4 @@
-# saarthi
+# saarthi.ai
 Front End Task Submission for Saarthi
 
 ![Filled Form Image](https://github.com/girijakar/saarthi/blob/main/img/screenshots/frontpage.png)
