@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="img/saarthilogo1.png" type="image/icon type">
+    <title>Front End Task Saarthi.ai</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-primary">
+  <a class="navbar-brand" href="#">Saarthi.ai</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">New Employee Registration <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      About Me
+    </span>
+  </div>
+</nav>
+    <div class="container">
+     <div class="row justify-content-center"> 
+         <div class="col-sm-6">
+            <img src="./img/img.svg" class="img-fluid">
+        </div>
+        <div class=" d-flex col-sm-6">
+            <div class="align-self-center mx-auto p-3" >
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger mx-auto d-block" data-toggle="modal" data-target="#exampleModal">
+                  New Employee? Register Here
+                </button>
+            </div>
+        </div>
+     </div>
+     <div class="row">
+        <div id="mydata" class="table-responsive">
+          <table id="myTableData" class="table">
+                <thead>
+                <tr>
+                    <td class="header"><b>Delete</b></td>
+                    <td class="header"><b>Name</b></td>
+                    <td class="header"><b>Employee ID</b></td>
+                    <td class="header"><b>Department</b></td>
+                    <td class="header"><b>Email ID</b></td>
+                    <td class="header"><b>DOJ</b></td>
+                </tr>
+                </thead>
+                <tbody>
+                    
+                <!-- Dummy Entries for hecking sticky header-->
+                <!-- <tr>
+                    <td><button type="button" class="btn btn-danger"  onClick="Javacsript:deleteRow(this)"> <i class="fas fa-times-circle"></i></button></td>
+                    <td>Ram</td>
+                    <td>SA12</td>
+                    <td>Software Engineer</td>
+                    <td>ram@mail.com</td>
+                    <td>2020-11-12</td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger"  onClick="Javacsript:deleteRow(this)"> <i class="fas fa-times-circle"></i></button></td>
+                    <td>Ram</td>
+                    <td>SA12</td>
+                    <td>Software Engineer</td>
+                    <td>ram@mail.com</td>
+                    <td>2020-11-12</td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger"  onClick="Javacsript:deleteRow(this)"> <i class="fas fa-times-circle"></i></button></td>
+                    <td>Ram</td>
+                    <td>SA12</td>
+                    <td>Software Engineer</td>
+                    <td>ram@mail.com</td>
+                    <td>2020-11-12</td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger"  onClick="Javacsript:deleteRow(this)"> <i class="fas fa-times-circle"></i></button></td>
+                    <td>Ram</td>
+                    <td>SA12</td>
+                    <td>Software Engineer</td>
+                    <td>ram@mail.com</td>
+                    <td>2020-11-12</td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger"  onClick="Javacsript:deleteRow(this)"> <i class="fas fa-times-circle"></i></button></td>
+                    <td>Ram</td>
+                    <td>SA12</td>
+                    <td>Software Engineer</td>
+                    <td>ram@mail.com</td>
+                    <td>2020-11-12</td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger"  onClick="Javacsript:deleteRow(this)"> <i class="fas fa-times-circle"></i></button></td>
+                    <td>Ram</td>
+                    <td>SA12</td>
+                    <td>Software Engineer</td>
+                    <td>ram@mail.com</td>
+                    <td>2020-11-12</td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger"  onClick="Javacsript:deleteRow(this)"> <i class="fas fa-times-circle"></i></button></td>
+                    <td>Ram</td>
+                    <td>SA12</td>
+                    <td>Software Engineer</td>
+                    <td>ram@mail.com</td>
+                    <td>2020-11-12</td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger"  onClick="Javacsript:deleteRow(this)"> <i class="fas fa-times-circle"></i></button></td>
+                    <td>Ram</td>
+                    <td>SA12</td>
+                    <td>Software Engineer</td>
+                    <td>ram@mail.com</td>
+                    <td>2020-11-12</td>
+                </tr> -->
+                <!-- Dummy Entries Ends-->
+                </tbody>
+          </table>
+        </div>
+     </div>
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Employee</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div class="container-fluid">
+            <form class="needs-validation" id="myform" onsubmit="return false" novalidate>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">Name</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="e.g. Tom" required>
+                  <div class="invalid-feedback">
+                    Please enter your name!
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom02">Employee ID</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="e.g. SA12" required>
+                  <div class="invalid-feedback">
+                    Enter Employee ID!
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom03">Department</label>
+                  <div class="form-group">
+                    <select class="custom-select" id="validationCustom03" required>
+                      <option value="">Select Your Department</option>
+                      <option value="Human Resource">Human Resource</option>
+                      <option value="Software Engineer">Software Engineer</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Web Developer">Web Developer</option>
+                      <option value="Graphic Designer">Graphic Designer</option>
+                    </select>
+                    <div class="invalid-feedback">Please Specify Department</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom04">Email ID</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="e.g john@doe.com" required>
+                  <div class="invalid-feedback">
+                    Please provide a mail id.
+                  </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                  <label for="validationCustom05">DOJ</label>
+                  <div class="form-group"> 
+      
+                  <input type="date" class="form-control" id="validationCustom05" required>
+                  </div>
+                  <div class="invalid-feedback">
+                    Please provide date of joining.
+                  </div>
+                </div>
+              </div>
+              
+                <div class="modal-footer">
+                <button class="btn btn-success float-left" type="submit" onclick="empty()" data-dismiss="modal">Submit form</button>
+                <button type="button" class="btn btn-warning" onclick="myFunction()">Clear</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+          </div>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+    <script>
+      //Form Validation Script for Individual Fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+        $(document).ready(function() {
+        $.validator.addMethod("MustSelectOpt", function(value, element) {
+        if(element.selectedIndex <= 0) return element.selectedIndex;
+                else return value;
+    }, " You must select any Option.");
+
+    $("#axis_placement_form").validate();
+  });
+  // Reset Form Function
+  function myFunction() {
+      document.getElementById("myform").reset();
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

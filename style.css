@@ -1,0 +1,23 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
+}
+.header 
+{ 
+    background-color: green;
+    position: sticky; 
+    top:0; 
+}
+.table-responsive{
+  height:400px;  
+  overflow:scroll;
+}
+ thead tr:nth-child(1) th{
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
