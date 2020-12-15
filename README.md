@@ -11,7 +11,7 @@ On Clicking the Button New Employee? A form pops up and it asks for the required
 The submit button submits the details and the clear button resets the form.
 
 
-
+![Filled Form Image](https://github.com/girijakar/saarthi/blob/main/img/screenshots/filledform.png)
 
 
 
